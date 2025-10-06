@@ -1,36 +1,27 @@
 document.addEventListener('DOMContentLoaded', function() {
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-        });
-
-    const projectCards = document.querySelectorAll('.project-card');
-    const modal = document.getElementById('project-modal');
-
-});
-
-document.addEventListener('DOMContentLoaded', function() {
     
-    // --- NAVBAR LOADER ---
-    fetch('navbar.html')
-        .then(response => response.text())
-        .then(data => {
-            document.getElementById('navbar-placeholder').innerHTML = data;
-        });
+    // --- NAVBAR LOADER (if using separate navbar file) ---
+    // fetch('navbar.html')
+    //     .then(response => response.text())
+    //     .then(data => {
+    //         document.getElementById('navbar-placeholder').innerHTML = data;
+    //     });
 
+    // --- TYPING EFFECT ---
     const nameElement = document.getElementById('typing-name');
-    const nameText = "George Binsar M.T. Sitorus";
-    let charIndex = 0;
-
-    function typeWriter() {
-        if (charIndex < nameText.length) {
-            nameElement.innerHTML += nameText.charAt(charIndex);
-            charIndex++;
-            setTimeout(typeWriter, 100); // Adjust typing speed (in ms)
+    if (nameElement) {
+        const nameText = "George Binsar M.T. Sitorus";
+        let charIndex = 0;
+        
+        function typeWriter() {
+            if (charIndex < nameText.length) {
+                nameElement.innerHTML += nameText.charAt(charIndex);
+                charIndex++;
+                setTimeout(typeWriter, 100); // Adjust typing speed
+            }
         }
+        typeWriter();
     }
-    typeWriter(); // Start the typing effect
 
     // --- SMOOTH SCROLL ---
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
@@ -47,6 +38,31 @@ document.addEventListener('DOMContentLoaded', function() {
     });
 
     // --- MODAL SCRIPT ---
-    const projectCards = document.querySelectorAll('.project-card');
-    // ... (the rest of your modal script continues here)
+    const modal = document.getElementById('image-modal');
+    const modalImg = document.getElementById('modal-img-src');
+    const captionText = document.getElementById('modal-caption');
+    const closeModal = document.querySelector('.close-button');
+
+    document.querySelectorAll('.item-title-link').forEach(link => {
+        link.addEventListener('click', function(e) {
+            e.preventDefault(); // Prevent link from navigating
+            modal.style.display = "block";
+            modalImg.src = this.dataset.imgSrc;
+            captionText.innerHTML = this.dataset.imgTitle;
+        });
+    });
+
+    // Close the modal when the 'x' is clicked
+    if (closeModal) {
+        closeModal.onclick = function() {
+            modal.style.display = "none";
+        }
+    }
+
+    // Close the modal when the user clicks anywhere outside of the modal content
+    window.onclick = function(event) {
+        if (event.target == modal) {
+            modal.style.display = "none";
+        }
+    }
 });
