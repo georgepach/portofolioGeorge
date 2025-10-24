@@ -127,7 +127,7 @@ body {
 
 .project-images {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
     gap: 20px;
 }
 
@@ -160,12 +160,12 @@ body {
 /* --- Custom Project Image Layouts --- */
 /* Layout for STMS page - single column for wide images */
 .project-images-stms {
-    grid-template-columns: 1fr; /* Override to a single column */
+    grid-template-columns: 2fr; /* Override to a single column */
 }
 
 /* Layout for DWDG page - two columns with larger items */
 .project-images-dwdg {
-     grid-template-columns: repeat(auto-fit, minmax(350px, 1fr)); /* Override with a larger min-width */
+     grid-template-columns: repeat(auto-fit, minmax(550px, 1fr)); /* Override with a larger min-width */
 }
 
 /* --- Responsive Adjustments --- */
