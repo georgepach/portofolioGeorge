@@ -8,23 +8,26 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>George Binsar M. T. Sitorus - Portfolio</title>
     <link rel="stylesheet" href="about.css">
+    <!-- Font Awesome for contact icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
 </head>
 <body>
        <header class="main-header">
         <nav class="navbar">
-            <a href="index.html" class="nav-logo-link">
+            <a href="#home" class="nav-logo-link">
                 <img src="image/logo.png" alt="Portfolio Logo" class="nav-logo-image"/>
             </a>
             <ul class="nav-menu">
-                <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
-                <li class="nav-item"><a href="projects.html" class="nav-link">Projects</a></li>
-                <li class="nav-item"><a href="contact.html" class="nav-link">Contact Me</a></li>
-                <li class="nav-item"><a href="resume/George Binsar M. T. Sitorus - Resume.pdf" class="nav-link-button" download>Download CV</a></li>
+                <li class="nav-item"><a href="#home" class="nav-link">Home</a></li>
+                <li class="nav-item"><a href="#skills" class="nav-link">Skills</a></li>
+                <li class="nav-item"><a href="#projects" class="nav-link">Projects</a></li>
+                <li class="nav-item"><a href="#contact" class="nav-link">Contact Me</a></li>
             </ul>
         </nav>
     </header>
 
-    <div class="container">
+    <!-- Hero Section -->
+    <section id="home" class="container">
         <div class="intro-section">
             <h1 id="typing-name"></h1>
             <p>Software Engineer based in Jakarta</p>
@@ -32,8 +35,9 @@
                 Welcome to my
                 <span class="portfolio-signature"><img src="image/logo.png" alt="Portfolio Signature"></span>
             </div>
-            <a href="#main-body-container" class="know-more-btn">
-                Get to know me more
+            <!-- CV Button Moved Here -->
+            <a href="https://drive.google.com/file/d/1wxJmDvz4rtpejRu-iKM76zIOE0DNgUlh/view?usp=sharing" class="know-more-btn">
+                Download CV
                 <span class="btn-circle"></span>
             </a>
         </div>
@@ -48,96 +52,106 @@
                 </div>
             </div>
         </div>
+         <!-- Add Scroll Arrow -->
+        <a href="#skills" class="scroll-down-container" aria-label="Scroll down">
+            <div class="scroll-down-arrow"></div>
+        </a>
+    </section>
+
+        <!-- About Me & Experiences Section -->
+    <div class="content-wrapper">
+        <section id="about" class="about-me-section"> <!-- Added id="about" -->
+            <h2 class="section-title">About Me</h2>
+            <p class="about-paragraph">
+                Hi, I’m George! I’m a Computer Science student at Bina Nusantara University with a passion for turning ideas into digital solutions. From coding and design to mobile apps, web platforms, and UI/UX, I love blending creativity with technology to create experiences that make an impact.
+            </p>
+        </section>
+
+        <section class="achievements-section">
+            <h3 class="subsection-title">Achievements</h3>
+            <ul class="info-list">
+                <li class="info-item">
+                    <a href="#" class="item-title-link" data-img-src="image/iccsi.png" data-img-title="The 10th ICCSCI 2025">
+                        <span class="item-title">The 10th International Conference on Computer Science and Computational Intelligence 2025</span>
+                    </a>
+                    <span class="item-date">Jul 2025 - Aug 2025</span>
+                </li>
+                <li class="info-item">
+                     <a href="#" class="item-title-link" data-img-src="image/basic.png" data-img-title="BASIC 2024 UI/UX Competition">
+                        <span class="item-title">Finalist - UI/UX Competition Business and System Innovation Challenge (BASIC) 2024</span>
+                    </a>
+                    <span class="item-date">Jan 2024</span>
+                </li>
+            </ul>
+        </section>
+        
+        <section class="experiences-section">
+            <h3 class="subsection-title">Experiences</h3>
+            <ul class="info-list">
+                <li class="info-item">
+                    <div>
+                        <a href="#" class="item-title-link" data-img-src="image/beelingua.jpg" data-img-title="BeeLingua Mentor at BINUS University">
+                            <span class="item-title">BINUS University</span>
+                        </a>
+                        <span class="item-subtitle">BeeLingua Mentor</span>
+                    </div>
+                    <span class="item-date">Apr 2025 - Present</span>
+                </li>
+                <li class="info-item">
+                    <div>
+                        <a href="#" class="item-title-link" data-img-src="image/dwdg.jpg" data-img-title="Do Well Do Good - BINUS Chapter">
+                            <span class="item-title">Do Well Do Good Future Leaders - BINUS Chapter</span>
+                        </a>
+                        <span class="item-subtitle">Project Support</span>
+                    </div>
+                    <span class="item-date">May 2025 - Aug 2025</span>
+                </li>
+                <li class="info-item">
+                    <div>
+                        <a href="#" class="item-title-link" data-img-src="image/bncc.jpg" data-img-title="Bina Nusantara Computer Club">
+                            <span class="item-title">Bina Nusantara Computer Club</span>
+                        </a>
+                        <span class="item-subtitle">Activist</span>
+                    </div>
+                    <span class="item-date">Nov 2023 - Sep 2024</span>
+                </li>
+            </ul>
+        </section>
     </div>
 
-    <div id="main-body-container" class="main-body-container">
-        <div class="main-content-area">
-            <section id="about-me-section" class="about-me-section">
-                <h2 class="section-title">About Me</h2>
-                <p class="about-paragraph">
-                    Hi, I’m George! I’m a Computer Science student at Bina Nusantara University with a passion for turning ideas into digital solutions. From coding and design to mobile apps, web platforms, and UI/UX, I love blending creativity with technology to create experiences that make an impact.
-                </p>
-            </section>
 
-            <section class="achievements-section">
-                <h3 class="subsection-title">Achievements</h3>
-                <ul class="info-list">
-                    <li class="info-item">
-                        <a href="#" class="item-title-link" data-img-src="image/iccsi.png" data-img-title="The 10th ICCSCI 2025">
-                            <span class="item-title">The 10th International Conference on Computer Science and Computational Intelligence 2025</span>
-                        </a>
-                        <span class="item-date">Jul 2025 - Aug 2025</span>
-                    </li>
-                    <li class="info-item">
-                         <a href="#" class="item-title-link" data-img-src="image/basic.png" data-img-title="BASIC 2024 UI/UX Competition">
-                            <span class="item-title">Finalist - UI/UX Competition Business and System Innovation Challenge (BASIC) 2024</span>
-                        </a>
-                        <span class="item-date">Jan 2024</span>
-                    </li>
-                </ul>
-            </section>
-            
-            <section class="experiences-section">
-                <h3 class="subsection-title">Experiences</h3>
-                <ul class="info-list">
-                    <li class="info-item">
-                        <div>
-                            <a href="#" class="item-title-link" data-img-src="image/beelingua.jpg" data-img-title="BeeLingua Mentor at BINUS University">
-                                <span class="item-title">BINUS University</span>
-                            </a>
-                            <span class="item-subtitle">BeeLingua Mentor</span>
-                        </div>
-                        <span class="item-date">Apr 2025 - Present</span>
-                    </li>
-                    <li class="info-item">
-                        <div>
-                            <a href="#" class="item-title-link" data-img-src="image/dwdg.jpg" data-img-title="Do Well Do Good - BINUS Chapter">
-                                <span class="item-title">Do Well Do Good Future Leaders - BINUS Chapter</span>
-                            </a>
-                            <span class="item-subtitle">Project Support</span>
-                        </div>
-                        <span class="item-date">May 2025 - Aug 2025</span>
-                    </li>
-                    <li class="info-item">
-                        <div>
-                            <a href="#" class="item-title-link" data-img-src="image/bncc.jpg" data-img-title="Bina Nusantara Computer Club">
-                                <span class="item-title">Bina Nusantara Computer Club -</span>
-                            </a>
-                            <span class="item-subtitle">Activist</span>
-                        </div>
-                        <span class="item-date">Nov 2023 - Sep 2024</span>
-                    </li>
-                </ul>
-            </section>
+    <!-- Tools & Technologies Section (Moved) -->
+    <section id="skills" class="skills-section-wrapper">
+        <div class="skills-content">
+            <h2 class="section-title">Tools & Technologies</h2> 
+            <div class="skills-grid">
+                <div class="skill-item"><img src="logo/html.png" alt="HTML5" class="skill-icon"><span>HTML5</span></div>
+                <div class="skill-item"><img src="logo/css.png" alt="CSS3" class="skill-icon"><span>CSS3</span></div>
+                <div class="skill-item"><img src="logo/mysql.png" alt="MySQL" class="skill-icon"><span>MySQL</span></div>
+                <div class="skill-item"><img src="logo/js.png" alt="JavaScript" class="skill-icon"><span>JavaScript</span></div>
+                <div class="skill-item"><img src="logo/java.png" alt="Java" class="skill-icon"><span>Java</span></div>
+                <div class="skill-item"><img src="logo/react.png" alt="React" class="skill-icon"><span>React</span></div>
+                <div class="skill-item"><img src="logo/laravel.png" alt="laravel" class="skill-icon"><span>Laravel</span></div>
+                <div class="skill-item"><img src="logo/python.jpg" alt="Python" class="skill-icon"><span>Python</span></div>
+                <div class="skill-item"><img src="logo/c.png" alt="C" class="skill-icon"><span>C</span></div>
+                <div class="skill-item"><img src="logo/csh.png" alt="C#" class="skill-icon"><span>C#</span></div>
+                <div class="skill-item"><img src="logo/aspn.png" alt="ASP.NET" class="skill-icon"><span>.NET</span></div>
+                <div class="skill-item"><img src="logo/git.png" alt="Git" class="skill-icon"><span>Git</span></div>
+                <div class="skill-item"><img src="logo/tailwind.png" alt="Tailwind" class="skill-icon"><span>Tailwind</span></div>
+                <div class="skill-item"><img src="logo/php.png" alt="PHP" class="skill-icon"><span>PHP</span></div>
+                <div class="skill-item"><img src="logo/figma.png" alt="Figma" class="skill-icon"><span>Figma</span></div>
+                <div class="skill-item"><img src="logo/github.png" alt="Github" class="skill-icon"><span>Github</span></div>
+                <div class="skill-item"><img src="logo/eclipse.png" alt="Eclipse" class="skill-icon"><span>Eclipse</span></div>
+                <div class="skill-item"><img src="logo/vsc.png" alt="Visual Studio" class="skill-icon"><span>Visual Studio</span></div>
+            </div>
         </div>
+    </section>
 
-        <aside class="sidebar-skills">
-            <section class="skills-section">
-                <h2 class="section-title">Tools & Technologies</h2>
-                <div class="skills-grid">
-                    <div class="skill-item"><img src="logo/html.png" alt="HTML5" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/css.png" alt="CSS3" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/mysql.png" alt="MySQL" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/js.png" alt="JavaScript" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/react.png" alt="React" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/laravel.png" alt="laravel" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/git.png" alt="Git" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/python.jpg" alt="Python" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/c.png" alt="C" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/csh.png" alt="C#" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/aspn.png" alt="ASP.NET" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/java.png" alt="Java" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/ae.png" alt="After Effects" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/figma.png" alt="Figma" class="skill-icon"></div>
-                    <div class="skill-item"><img src="logo/fl.jpg" alt="FL Studio" class="skill-icon"></div>
-                </div>
-            </section>
-        </aside>
-    </div>
-
-    <section id="featured-projects-section" class="projects-section" style="background-color: #fff;">
+    <!-- Full Projects Section (Merged from projects.html) -->
+    <section id="projects" class="projects-section"> <!-- Added id="projects" -->
         <div class="projects-content">
-            <h2 class="section-title">Featured Projects</h2>
+            <h2 class="section-title">Projects</h2>
+            <p class="section-subtitle">A selection of my work. See something you like? Let's talk.</p>
             <div class="project-grid">
 
                 <div class="project-card">
@@ -145,7 +159,7 @@
                     <div class="project-info">
                         <span class="project-category">Web Platform</span>
                         <h3 class="project-title">GreenLoop</h3>
-                        <p class="project-description">A waste exchange platform using Laravel & React. Contributed to UI/UX, order system, activities page, and homepage.</p> <!-- Updated Description -->
+                        <p class="project-description">A waste exchange platform using Laravel & React. Contributed to UI/UX, order system, activities page, and homepage.</p>
                         <a href="project/greenloop.html" class="project-link">View Details</a>
                     </div>
                 </div>
@@ -155,7 +169,7 @@
                     <div class="project-info">
                         <span class="project-category">AI / Machine Learning</span>
                         <h3 class="project-title">Smart Traffic Management System</h3>
-                        <p class="project-description">An AI model using YOLOv5 and Python to detect vehicles and dynamically optimize traffic flow.</p>
+                        <p class="project-description">An AI model using YOLOv5 and Python to detect vehicles and dynamically optimize traffic flow at intersections for an AI course.</p>
                         <a href="project/stms.html" class="project-link">View Details</a>
                     </div>
                 </div>
@@ -170,13 +184,83 @@
                     </div>
                 </div>
 
-            </div>
-            <div style="text-align: center; margin-top: 40px;">
-                <a href="projects.html" class="nav-link-button">View All Projects</a>
+                <div class="project-card">
+                    <img src="thumbnail/dwdg.png" alt="DWDG Consulting Project Screenshot" class="project-image">
+                    <div class="project-info">
+                        <span class="project-category">Strategy & Consulting</span>
+                        <h3 class="project-title">DWDG Binus Consulting</h3>
+                        <p class="project-description">A consulting project to address donor engagement by developing strategies combining gamification and storytelling.</p>
+                        <a href="project/dwdg.html" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="thumbnail/datani.png" alt="DataTani Project Screenshot" class="project-image">
+                    <div class="project-info">
+                        <span class="project-category">Mobile Application</span>
+                        <h3 class="project-title">DataTani</h3>
+                        <p class="project-description">A mobile app for the Forestry Department of Lampung to help farmers estimate rice yields, for which I handled frontend and backend development.</p>
+                        <a href="project/datatani.html" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="thumbnail/asp.jpg" alt=".NET Web App Screenshot" class="project-image">
+                    <div class="project-info">
+                        <span class="project-category">Web Application</span>
+                        <h3 class="project-title">.NET Web Application</h3>
+                        <p class="project-description">Developed a jewelry e-commerce site with ASP.NET & C#, contributing to frontend/backend and applying Domain-Driven Design.</p>
+                        <a href="project/dotnet.html" class="project-link">View Details</a>
+                    </div>
+                </div>
+
+                <div class="project-card">
+                    <img src="thumbnail/nose.png" alt="Nosetalgia Project Screenshot" class="project-image">
+                    <div class="project-info">
+                        <span class="project-category">Brand & Content Creation</span>
+                        <h3 class="project-title">Nosetalgia</h3>
+                        <p class="project-description">A passion project for films and music, creating a space for thoughtful reviews and cultural discussion through social media.</p>
+                        <a href="project/nosetalgia.html" class="project-link">View Details</a>
+                    </div>
+                </div>
+
             </div>
         </div>
     </section>
 
+    <!-- Contact Section (Merged from contact.html) -->
+    <section id="contact" class="contact-section"> <!-- Added id="contact" -->
+        <div class="contact-container">
+            <div class="contact-header">
+                <h1 class="section-title">Get In Touch</h1>
+                <p class="section-subtitle">I'm currently looking for internship opportunities and would love to connect. Feel free to reach out through any of the channels below.</p>
+            </div>
+    
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="info-item">
+                        <i class="fas fa-envelope"></i>
+                        <a href="mailto:georgebinsar45@gmail.com">georgebinsar4Gmail.com</a>
+                    </div>
+                    <div class="info-item">
+                        <i class="fas fa-phone"></i>
+                        <a href="tel:+6285163162918">+62 851-6316-2918</a>
+                    </div>
+                     <div class="info-item">
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>Jakarta, Indonesia</span>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://www.linkedin.com/in/george-binsar-m-t-sitorus/" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://github.com/georgepach" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.instagram.com/georgebnsr/" target="_blank" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal for Achievements -->
     <div id="image-modal" class="modal">
         <div class="modal-content">
             <span class="close-button">&times;</span>
